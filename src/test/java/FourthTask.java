@@ -1,18 +1,13 @@
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
-import junit.framework.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-
 import static com.codeborne.selenide.Configuration.baseUrl;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
-import static junit.framework.Assert.assertEquals;
-import static junit.framework.Assert.assertTrue;
+import static com.codeborne.selenide.Selenide.*;
 
-public class SecondTask {
 
-    public SecondTask()
+public class FourthTask {
+    public FourthTask()
     {
         Configuration.timeout=20000;
         Configuration.browser = "chrome";
@@ -22,7 +17,9 @@ public class SecondTask {
     }
 
     @Test
-    public void TestLogin() throws InterruptedException {
+    public void TestSearch() throws InterruptedException
+    {
+        //gotoStore
         open(baseUrl);
 
         $(By.id("userName")).setValue("testAutomation");
@@ -31,9 +28,17 @@ public class SecondTask {
         //Button
         $(By.id("login")).click();
 
-       Boolean isVisible =  $(By.id("userName-value")).isDisplayed();
+        //button
+        $(By.id("gotoStore")).click();
 
-           assertTrue(isVisible);
-           assertEquals("testAutomation",$(By.id("userName-value")).innerHtml());
+       String firstTitle =  $$("a").findBy(Condition.exactText("Git Pocket Guide")).innerHtml();
+
+
+       Thread.sleep(3000);
+
+        // search field
+        $(By.id("searchBox")).sendKeys(firstTitle);
+
+
     }
 }
