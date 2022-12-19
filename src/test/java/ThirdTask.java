@@ -46,32 +46,21 @@ public class ThirdTask {
         Response response =given()
                 .queryParam("ISBN",ISBNValue).
                 when().
-                get("https://bookstore.toolsqa.com/swagger/#/BookStore/BookStoreV1BookGet").
+                get("https://bookstore.toolsqa.com/BookStore/v1/Book").
                 then().
                 statusCode(200).
-                log().
-                all().
                 extract().
                 response();
 
         ResponseBody body = response.getBody();
 
-         String responseBody = body.asString();
-
         //JSON Representation from Response Body
         JsonPath jsnPath = body.jsonPath();
 
-        System.out.print(responseBody);
-
         //Get value of Location Key
-        //String s = jsnPath.get("Title");
+        String titleFromApi = jsnPath.get("title");
 
-        //System.out.print(s);
-
-        //JsonPath jsonPath = new JsonPath(response.asString());
-        //String titleFromApi = jsonPath.getString("Book.title");
-
-        //assertEquals(title,titleFromApi);
+        assertEquals(title,titleFromApi);
 
     }
 
