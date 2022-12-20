@@ -1,18 +1,15 @@
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
-import junit.framework.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import static com.codeborne.selenide.Configuration.baseUrl;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.*;
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertTrue;
 
-public class SecondTask {
-
-    public SecondTask()
+public class FifthTaskTest {
+    public FifthTaskTest()
     {
         Configuration.timeout=20000;
         Configuration.browser = "chrome";
@@ -22,18 +19,20 @@ public class SecondTask {
     }
 
     @Test
-    public void TestLogin() throws InterruptedException {
+    public void TestLogout() throws InterruptedException {
         open(baseUrl);
 
         $(By.id("userName")).setValue("testAutomation");
         $(By.id("password")).setValue("Automation@1234");
 
-        //Button
+        //Button login
         $(By.id("login")).click();
 
-       Boolean isVisible =  $(By.id("userName-value")).isDisplayed();
+        // Button logout
+        $(By.id("submit")).click();
 
-           assertTrue(isVisible);
-           assertEquals("testAutomation",$(By.id("userName-value")).innerHtml());
+        Boolean isVisible =$$("h2").findBy(Condition.exactText("Welcome,")).isDisplayed();
+
+        assertTrue(isVisible);
     }
 }

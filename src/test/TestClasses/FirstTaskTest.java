@@ -1,4 +1,4 @@
-import Providers.FirstTestData;
+import TestData.NewUsersTestData;
 import com.codeborne.selenide.Configuration;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
@@ -8,21 +8,27 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static junit.framework.Assert.assertEquals;
 
-public class FirstTask {
 
-    public FirstTask()
+public class FirstTaskTest {
+
+    private  FirstTaskStep _firstTaskStep;
+    public FirstTaskTest()
     {
         Configuration.timeout=20000;
         Configuration.browser = "chrome";
         Configuration.browserSize="1920x1080";
 
         baseUrl="https://demoqa.com/login";
+
+       // _firstTaskStep = new FirstTaskStep()
     }
 
 
-    @Test(dataProvider = "FirstTestdata", dataProviderClass = FirstTestData.class)
+    @Test(dataProvider = "NewUsersTestData", dataProviderClass = NewUsersTestData.class)
     public void TestRegistration(String firstName, String lastName, String userName, String password )  throws InterruptedException {
         open(baseUrl);
+
+
 
         //Button
          $(By.id("newUser")).click();
@@ -37,5 +43,4 @@ public class FirstTask {
 
         assertEquals("Please verify reCaptcha to register!",$(By.id("name")).innerHtml());
     }
-
 }

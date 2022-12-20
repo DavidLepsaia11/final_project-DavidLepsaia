@@ -11,9 +11,9 @@ import static com.codeborne.selenide.Selenide.*;
 import static io.restassured.RestAssured.given;
 import static junit.framework.Assert.assertEquals;
 
-public class ThirdTask {
+public class ThirdTaskTest {
 
-    public ThirdTask ()
+    public ThirdTaskTest()
     {
         Configuration.timeout=20000;
         Configuration.browser = "chrome";

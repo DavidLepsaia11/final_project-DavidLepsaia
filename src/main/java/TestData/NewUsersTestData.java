@@ -1,9 +1,9 @@
-package Providers;
+package TestData;
 
 import org.testng.annotations.DataProvider;
 
-public class FirstTestData {
-    @DataProvider(name = "FirstTestdata")
+public class NewUsersTestData {
+    @DataProvider(name = "NewUsersTestData")
     public Object[][] dpData() {
         return new Object[][]{
                 {"David", "Lepsaia", "D.Lepsaia","123456"},

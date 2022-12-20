@@ -1,13 +1,14 @@
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selenide.*;
 
 
-public class FourthTask {
-    public FourthTask()
+public class FourthTaskTest {
+    public FourthTaskTest()
     {
         Configuration.timeout=20000;
         Configuration.browser = "chrome";
@@ -37,8 +38,9 @@ public class FourthTask {
        Thread.sleep(3000);
 
         // search field
-        $(By.id("searchBox")).sendKeys(firstTitle);
-
+        SelenideElement search = $(By.id("searchBox"));
+        search.setValue(firstTitle);
+        search.submit();
 
     }
 }

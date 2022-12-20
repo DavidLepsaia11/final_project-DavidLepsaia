@@ -4,9 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3cb4412-2b2c-4113-b872-4c0b9d26e39a" name="Changes" comment="Added some Task classes">
+    <list default="true" id="d3cb4412-2b2c-4113-b872-4c0b9d26e39a" name="Changes" comment="Added some Changes">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/AuthorizedUserPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/BookStorePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/RegistrationPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Steps/FirstTaskStep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TestData/AuthanthicatedUserTestData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TestData/NewUsersTestData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TestData/RegistrationTestData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ThirdTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ThirdTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FifthTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestClasses/FifthTaskTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FirstTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestClasses/FirstTaskTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FourthTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestClasses/FourthTaskTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Providers/FirstTestData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SecondTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestClasses/SecondTaskTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ThirdTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestClasses/ThirdTaskTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,13 +47,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_directory_selection": "C:/Users/PCZONE.GE/IdeaProjects/final_project-DavidLepsaia/src/test/java",
+    "last_opened_file_path": "C:/Users/User/Desktop"
   }
-}</component>
-  <component name="RunManager" selected="TestNG.ThirdTask.TestTask3">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\PCZONE.GE\IdeaProjects\final_project-DavidLepsaia\src\test\TestClasses" />
+      <recent name="C:\Users\PCZONE.GE\IdeaProjects\final_project-DavidLepsaia\src\main" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.FourthTaskTest.TestSearch">
     <configuration name="FifthTask.TestLogout" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="final_project-DavidLepsaia" />
       <option name="PACKAGE_NAME" value="" />
@@ -51,10 +75,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstTask.TestRegistration" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstTaskTest.TestRegistration" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="final_project-DavidLepsaia" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTask" />
+      <option name="MAIN_CLASS_NAME" value="FirstTaskTest" />
       <option name="METHOD_NAME" value="TestRegistration" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -63,10 +87,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FourthTask.TestSearch" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="FourthTaskTest.TestSearch" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="final_project-DavidLepsaia" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FourthTask" />
+      <option name="MAIN_CLASS_NAME" value="FourthTaskTest" />
       <option name="METHOD_NAME" value="TestSearch" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -75,10 +99,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SecondTask.TestLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SecondTaskTest.TestLogin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="final_project-DavidLepsaia" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SecondTask" />
+      <option name="MAIN_CLASS_NAME" value="SecondTaskTest" />
       <option name="METHOD_NAME" value="TestLogin" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -87,10 +111,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThirdTask.TestTask3" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ThirdTaskTest.TestTask3" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="final_project-DavidLepsaia" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ThirdTask" />
+      <option name="MAIN_CLASS_NAME" value="ThirdTaskTest" />
       <option name="METHOD_NAME" value="TestTask3" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -101,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ThirdTask.TestTask3" />
-        <item itemvalue="TestNG.FourthTask.TestSearch" />
+        <item itemvalue="TestNG.FourthTaskTest.TestSearch" />
+        <item itemvalue="TestNG.ThirdTaskTest.TestTask3" />
         <item itemvalue="TestNG.FifthTask.TestLogout" />
-        <item itemvalue="TestNG.SecondTask.TestLogin" />
-        <item itemvalue="TestNG.FirstTask.TestRegistration" />
+        <item itemvalue="TestNG.SecondTaskTest.TestLogin" />
+        <item itemvalue="TestNG.FirstTaskTest.TestRegistration" />
       </list>
     </recent_temporary>
   </component>
@@ -125,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671489349935</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added some Changes">
+      <created>1671490089329</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671490089329</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -141,6 +172,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added some Task classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some Task classes" />
+    <MESSAGE value="Added some Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some Changes" />
   </component>
 </project>
