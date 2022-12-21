@@ -14,11 +14,13 @@ public class BookStorePage {
     public ElementsCollection label;
 
     public SelenideElement search;
+    public SelenideElement backToStoreBtn;
 
     public BookStorePage()
     {
         link = $$("a");
         label = $$("label");
         search = $(By.id("searchBox"));
+        backToStoreBtn = $(By.id("addNewRecordButton"));
     }
 }
